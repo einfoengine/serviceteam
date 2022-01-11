@@ -3,13 +3,12 @@ import { Fragment } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './Style/test.css'
+import { Header } from './Components/Header';
 
 const App = () => {
   return (
     <Fragment>
-      <div className="container">
-      <h1>Hi I am diong my test!</h1>
-      </div>
+      <Header/>
     </Fragment>
   );
 }
