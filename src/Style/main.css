@@ -3,11 +3,8 @@
   padding: 0;
 }
 
-body {
-  background: #F8FBFF;
-}
-
-ul {
+ul, ol {
+  margin: 0;
   padding: 0;
 }
 
@@ -15,23 +12,50 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-fluid {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+body {
+  background: #F8FBFF;
+}
+
 .mt-header {
   background-color: #272DC1;
+  padding: 15px 0;
 }
 
-.mt-logo {
+.mt-menu {
+  margin-top: 15px;
+}
+
+.mt-menu.inline li {
   float: left;
+  margin: 5px 15px;
 }
 
-.mt-nav.horaizontal {
-  float: left;
+.mt-menu.inline li a {
+  text-transform: uppercase;
+  color: #F8FBFF;
 }
 
-.mt-nav.horaizontal li {
-  float: left;
+.mt-btn {
+  text-transform: uppercase;
 }
 
-.mt-nav.horaizontal a {
-  text-decoration: none;
+.mt-btn.header-cta {
+  background-image: linear-gradient(45deg, #E75E16, #F03726);
+  padding: 6px 35px;
+  text-align: center;
+  color: #F8FBFF;
+  font-weight: 700;
+  display: inline-block;
+  border: 1px solid #F8FBFF;
 }
 /*# sourceMappingURL=main.css.map */

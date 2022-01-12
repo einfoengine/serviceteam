@@ -8,39 +8,71 @@ $color-white: #F8FBFF;
 $color-black: #0F0F0F;
 $color-dark-blue: #090A38;
 
-// backgrounds
 $bg-body: $color-white;
 $bg-header: $color-primary;
 
+$top-bar-menu-color: $color-white;
+
+// Typo
+$boldest: 700;
+
 // Global
-// Body
 *{
     margin: 0;
     padding: 0;
-}
-body {background: $bg-body};
-ul{
+} 
+ul, ol{
+    margin: 0;
     padding: 0;
 }
 li{
     list-style: none;
+} 
+a{
+    text-decoration: none;
+    color: inherit;
+}  
+
+// Layout
+.container-fluid{
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-// Position spasific
+// Position spesific
+// Body
+body {background: $bg-body};
 // Header
 .mt-header{
     background-color: $bg-header;
+    padding: 15px 0;
 }
-.mt-logo{
-    float: left;
-}
-.mt-nav.horaizontal{
-    float: left;
-    li{
-        float: left;
 
+// Component spesific
+// menu
+.mt-menu{
+    margin-top: 15px;
+    &.inline{
+        li{
+            float: left;
+            margin: 5px 15px;
+            a{
+                text-transform: uppercase;
+                color: $top-bar-menu-color;
+            }
+        }
     }
-    a{
-        text-decoration: none;
+}
+// Buttons
+.mt-btn{
+    text-transform: uppercase;
+    &.header-cta{
+        background-image: linear-gradient(45deg, $color-secondary, $color-tertiary);
+        padding: 6px 35px;
+        text-align: center;
+        color: $color-white;
+        font-weight: $boldest;
+        display: inline-block;
+        border: 1px solid $color-white;
     }
 }

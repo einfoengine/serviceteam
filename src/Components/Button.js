@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Button = (props) => {
+const Button = ({className, id, label, link}) => {
     return (
-        <div className={props.className}>
-            {props.text}
+        <div id={id} className={`mt-btn ${id} ${className}`}>
+            <a href={link}>{label}</a>
         </div>
     )
 }
+
+export default Button
