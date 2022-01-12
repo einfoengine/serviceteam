@@ -3,7 +3,7 @@ import LogoSrc from '../Resource/Logo-copy-4.png';
 
 export const Logo = () => {
     return (
-        <div className='logo'>
+        <div className='mt-logo'>
             <img src={LogoSrc} alt="Logo" />
         </div>
     )

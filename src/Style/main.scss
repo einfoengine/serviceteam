@@ -1,0 +1,46 @@
+// Variables
+
+// Colors
+$color-primary: #272DC1;
+$color-secondary: #E75E16;
+$color-tertiary: #F03726;
+$color-white: #F8FBFF;
+$color-black: #0F0F0F;
+$color-dark-blue: #090A38;
+
+// backgrounds
+$bg-body: $color-white;
+$bg-header: $color-primary;
+
+// Global
+// Body
+*{
+    margin: 0;
+    padding: 0;
+}
+body {background: $bg-body};
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+// Position spasific
+// Header
+.mt-header{
+    background-color: $bg-header;
+}
+.mt-logo{
+    float: left;
+}
+.mt-nav.horaizontal{
+    float: left;
+    li{
+        float: left;
+
+    }
+    a{
+        text-decoration: none;
+    }
+}
