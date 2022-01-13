@@ -17,6 +17,13 @@ a {
   color: inherit;
 }
 
+.mt-sec-title {
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  font-size: 105px;
+  text-transform: uppercase;
+}
+
 .container-fluid {
   padding-left: 100px;
   padding-right: 100px;
