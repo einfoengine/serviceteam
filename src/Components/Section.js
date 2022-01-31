@@ -5,9 +5,9 @@ const Section = ({id, className='', title, type, children}) => {
         <section id={id} className={`mt-section ${id} ${className}`}>
             <div className={type}>
                 <div className="row">
-                    {/* <div className="col-md-12"> */}
-                        <h2 className='mt-sec-title'>{title}</h2>
-                    {/* </div> */}
+                    <div className="col-md-12">
+                        {title && <h2 className='mt-sec-title'>{title}</h2>}
+                    </div>
                     {children}
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from './Button';
-import { Logo } from './Logo'
-import Menu from './Menu';
+import Button from '../Components/Button';
+import { Logo } from '../modules/Logo'
+import Menu from '../modules/Menu';
 
 const menus = [
     {"label":"home", "link": "#"},
@@ -10,7 +10,7 @@ const menus = [
     {"label":"blog", "link": "#"},
     {"label":"career", "link": "#"}
 ];
-export const Header = () => {
+const Header = () => {
     return (
         <div id="mt-header" className='mt-header'>
             <div className="container-fluid">
@@ -29,3 +29,4 @@ export const Header = () => {
         </div>
     )
 }
+export default Header;

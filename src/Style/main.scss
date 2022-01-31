@@ -27,6 +27,8 @@ $text-black: $color-black;
 // Font weight
 $boldest: 700;
 
+$icon-size: 50px;
+
 // Global
 *{
     margin: 0;
@@ -43,6 +45,13 @@ a{
     text-decoration: none;
     color: inherit;
 }  
+
+// General Helper Classes
+//.......................
+.mt-icon {
+    max-width: 50px;
+}
+
 // Sections
 .mt-sec-title{
     color: transparent;
