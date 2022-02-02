@@ -1,39 +1,13 @@
 // Variables
+@import './variables.scss';
 
-// Colors
-$color-primary: #272DC1;
-$color-secondary: #E75E16;
-$color-tertiary: #F03726;
-$color-white: #F8FBFF;
-$color-black: #0F0F0F;
-$color-dark-blue: #090A38;
-
-$bg-body: $color-white;
-$bg-header: $color-primary;
-
-$top-bar-menu-color: $color-white;
-
-// Typo
-// Font family
-// Font size
-$base-font-size: 14px;
-$sec-heading-font-size: $base-font-size * 7.5;
-$para-font-size: $base-font-size;
-// text-color
-$text-primary: $color-primary;
-$text-secondary: $color-secondary;
-$text-white: $color-white;
-$text-black: $color-black;
-// Font weight
-$boldest: 700;
-
-$icon-size: 50px;
-
-// Global
+// HTML Elements
+// ...............
 *{
     margin: 0;
     padding: 0;
 } 
+body {background: $bg-body};
 ul, ol{
     margin: 0;
     padding: 0;
@@ -46,36 +20,102 @@ a{
     color: inherit;
 }  
 
-// General Helper Classes
-//.......................
-.mt-icon {
-    max-width: 50px;
+// Typography
+// .................
+.mt-mod-title{
+    text-transform: uppercase;
+    span{
+        color: $color-gry;
+        display: block;
+        font-weight: 300;
+    }
 }
-
-// Sections
 .mt-sec-title{
     color: transparent;
-    -webkit-text-stroke: 1px black;
-    font-size: $sec-heading-font-size;
+    -webkit-text-stroke: 1px $color-gry;
     text-transform: uppercase;
+    font-size: $heading-jumbo;
 }
 
+.mt-supper-heading{
+    color: $text-black;
+    -webkit-text-stroke: 0;
+    display: block;
+    font-size: $heading-regular;
+    font-weight: bold;
+}
+
+.mt-main-heading{
+    font-size: $heading-regular;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: $mt-gutter;
+    span{
+        font-weight: 300;
+        display: block;
+        color: $color-gry;
+    }
+}
+
+.mt-main-heading-primary{
+    font-size: $heading-regular;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: $mt-gutter;
+    span{
+        font-weight: 300;
+        display: block;
+        color: $color-primary;
+    }
+}
+
+
+
 // Layout
+// .................
 .container-fluid{
     padding-left: 100px;
     padding-right: 100px;
 }
 
-// Position spesific
-// Body
-body {background: $bg-body};
-// Header
-.mt-header{
-    background-color: $bg-header;
-    padding: 15px 0;
+// General Helper Classes
+//.......................
+.mt-icon {
+    max-width: 50px;
+}
+.mt-left-bracket{
+    border-left: 1px solid $color-black;
+    padding-left: $mt-gutter;
+    padding-top: $mt-gutter;
+    padding-bottom: $mt-gutter;
+    position: relative;
+
+    &::before{
+        content: '';
+        width: 30px;
+        height: 1px;
+        background: $color-black;
+        position: relative;
+        display: block;
+        left: - $mt-gutter;
+        top: - $mt-gutter;
+    }
+    &::after{
+        content: '';
+        width: 30px;
+        height: 1px;
+        background: $color-black;
+        position: relative;
+        display: block;
+        left: - $mt-gutter;
+        bottom: - $mt-gutter;
+    }
 }
 
+
+
 // Component spesific
+// .....................
 // menu
 .mt-menu{
     margin-top: 15px;
@@ -103,3 +143,131 @@ body {background: $bg-body};
         border: 1px solid $color-white;
     }
 }
+.mt-btn-cta{
+    display: inline-block;
+    width: auto;
+    margin: auto;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background-color: #F8FBFF;
+        border: 1px solid #0F0F0F;
+        top: -9px;
+        left: 9px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background-color: #F8FBFF;
+        border: 1px solid #0F0F0F;
+        bottom: -9px;
+        left: 9px;
+    }
+    > span{
+        padding: 9px 30px;
+        color: $color-tertiary;
+        background: $color-white;
+        &::before{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: #F8FBFF;
+            border: 1px solid #0F0F0F;
+            top: -9px;
+            right: 9px;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background-color: #F8FBFF;
+            border: 1px solid #0F0F0F;
+            bottom: -9px;
+            right: 9px;
+        }
+    }
+}
+.mt-btn-primary{
+    background: $color-white;
+    border: 1px solid $color-primary;
+    padding: 7px 15px;
+}
+.mt-btn-secondary{
+    background: $color-white;
+    border: 1px solid $color-tertiary;
+    color: $color-tertiary;
+    padding: 7px 15px;
+}
+
+// Boxes
+.mt-box-primary{
+    background-color: $box-primary-bg;
+    border: $box-primary-border;
+    border-radius: $box-primary-radius;
+    padding: $box-primary-padding;
+    color: $box-primary-text-color;
+}
+.mt-jumbotron{
+    border: 1px solid $color-black;
+    text-align: center;
+    padding: $mt-gutter * 1.5;
+    background: $color-dark-blue;
+    .mt-supper-heading{
+        color: $color-white;
+    }
+    .mt-heading{
+        color: $color-tertiary;
+    }
+}
+// Gallery
+.mt-flex-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    img{
+        max-height: 70px;
+    }
+}
+
+
+// Section / Position spesific
+// ...........................
+
+.mt-section{
+    padding: $mt-section-padding 0;
+}
+
+// Header
+.mt-header{
+    background-color: $bg-header;
+    padding: 15px 0;
+}
+
+// Hero
+.mt-hero{
+    background: $color-primary;
+    .mt-supper-heading{
+        color: $color-white;
+    }
+}
+
+// Services
+.mt-service{
+    p, .mt-mod-title, .mt-btn{
+        margin-left: 50px;
+    }
+
+}
+
+// Process

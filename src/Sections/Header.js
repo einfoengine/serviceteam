@@ -22,7 +22,7 @@ const Header = () => {
                         <Menu menus={menus} type="inline" id="main-menu" className='top-bar-menu'/>
                     </div>
                     <div className="col-md-3">
-                        <Button id='header-cta' className='btn-cta-a' label="Client Dashboard" link="#"/>
+                        <Button id='header-cta' className='mt-btn-secondary' label="Client Dashboard" link="#"/>
                     </div>
                 </div>
             </div>

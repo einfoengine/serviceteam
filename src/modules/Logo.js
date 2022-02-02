@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoSrc from '../Resource/Logo-copy-4.png';
+import LogoSrc from '../Resource/logo.png';
 
 export const Logo = () => {
     return (

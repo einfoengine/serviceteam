@@ -6,7 +6,7 @@ const Blurb = ({title, text, link, imgSrc, btnLabel, alt, imgClass}) => {
             <img className={imgClass} src={imgSrc} alt={alt} />
             <h3 className='mt-mod-title'>{title}</h3>
             <p>{text}</p>
-            <a href={link}>{btnLabel}</a>
+            <a className='mtn-btn-blurb mt-btn' href={link}>{btnLabel}</a>
         </div>
     )
 }

@@ -9,7 +9,7 @@ const Service = () => {
                 <div className="col-md-4">
                     <Blurb 
                         imgSrc="https://cdn-icons-png.flaticon.com/512/558/558593.png"
-                        imgClass="mt-icon"
+                        imgClass="mt-icon box-primary"
                         title={<>web<span>solution</span></>}
                         text="The modern website often means a very interactive solution, combining with a stunning UI, friendly and meaningful UX, a client-end solution, an admin panel etc."
                         link="#"
@@ -19,7 +19,7 @@ const Service = () => {
                 <div className="col-md-4">
                     <Blurb 
                         imgSrc="https://cdn-icons-png.flaticon.com/512/558/558593.png"
-                        imgClass="mt-icon"
+                        imgClass="mt-icon box-primary"
                         title={<>web<span>solution</span></>}
                         text="The modern website often means a very interactive solution, combining with a stunning UI, friendly and meaningful UX, a client-end solution, an admin panel etc."
                         link="#"
@@ -29,7 +29,7 @@ const Service = () => {
                 <div className="col-md-4">
                     <Blurb 
                         imgSrc="https://cdn-icons-png.flaticon.com/512/558/558593.png"
-                        imgClass="mt-icon"
+                        imgClass="mt-icon box-primary"
                         title={<>web<span>solution</span></>}
                         text="The modern website often means a very interactive solution, combining with a stunning UI, friendly and meaningful UX, a client-end solution, an admin panel etc."
                         link="#"

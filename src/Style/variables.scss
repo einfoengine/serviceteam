@@ -1,0 +1,48 @@
+// Space and size
+$mt-gutter: 30px;
+$mt-section-padding: $mt-gutter * 3;
+
+// Colors
+$color-primary: #272DC1;
+$color-secondary: #E75E16;
+$color-tertiary: #F03726;
+$color-white: #F8FBFF;
+$color-black: #0F0F0F;
+$color-gry: #aaaaaa;
+$color-dark-blue: #090A38;
+
+$bg-body: $color-white;
+$bg-header: $color-primary;
+
+$top-bar-menu-color: $color-white;
+
+// Typo
+// ............
+// Font family
+// Font size
+$base-font-size: 14px;
+$heading-jumbo: $base-font-size * 6;
+$heading-regular: $base-font-size * 2.5;
+$heading-sub: $base-font-size * 1.5;
+$heading-small: $base-font-size;
+$para-font-size: $base-font-size;
+$font-small: $base-font-size - 2;
+// text-color
+$text-primary: $color-primary;
+$text-secondary: $color-secondary;
+$text-white: $color-white;
+$text-black: $color-black;
+$text-gry: $color-gry;
+// Font weight
+$boldest: 700;
+
+$icon-size: 50px;
+
+// Components
+// .................
+// boxes
+$box-primary-bg: $color-primary;
+$box-primary-border: 0 none;
+$box-primary-radius: 0 none;
+$box-primary-padding: 15px;
+$box-primary-text-color: $color-white;

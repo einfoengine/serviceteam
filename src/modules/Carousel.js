@@ -17,22 +17,22 @@ export default class Carousel extends Component {
       <>
             <Slider {...settings}>
               <div>
-                <img src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
+                <img className='img-fluid pe-3' src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
               </div>
               <div>
-                <img src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
+                <img className='img-fluid pe-3' src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
               </div>
               <div>
-                <img src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
+                <img className='img-fluid pe-3' src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
               </div>
               <div>
-                <img src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
+                <img className='img-fluid pe-3' src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
               </div>
               <div>
-                <img src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
+                <img className='img-fluid pe-3' src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
               </div>
               <div>
-                <img src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
+                <img className='img-fluid pe-3' src='https://cdn.dribbble.com/users/4540442/screenshots/17384091/media/d214dbcff3f5bcee808dd3db63e11538.png?compress=1&resize=1600x1200&vertical=top' alt="hi" />
               </div>
             </Slider>
 
