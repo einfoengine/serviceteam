@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 // import 'sass';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,20 +14,17 @@ import LiveTalk from './Sections/LiveTalk';
 import Blogs from './Sections/Blogs';
 import Hero from './Sections/Hero';
 import Footer from './Sections/Footer';
+import Home from './Pages/Home';
+import About from './Pages/About';
 
 const App = () => {
   return (
     <Fragment>
       <Header/>
-      <Hero/>
-      <Service/>
-      <Portfolio/>
-      <Process/>
-      <Offer/>
-      {/* <WhyUs/> */}
-      {/* <LiveTalk/> */}
-      {/* <Blogs/> */}
-      <Footer/>
+      <Routes>
+        <Route exact path='/' element={<Home/>}/>
+        <Route exact path='/about' element={<About/>}/>
+      </Routes>
     </Fragment>
   );
 }

@@ -5,9 +5,9 @@ import Section from '../Components/Section'
 const Process = () => {
     return (
         <>
-            <Section id="mt-process" type="container">
+            <Section id="mt-process" type="container-fluid">
                 <div className="col-md-6">
-                    <Heading className="mt-main-heading-primary">
+                    <Heading className=" mt-4">
                         We use <span className='text-primary'>awesome tecnologies</span>
                     </Heading>
                     <div className="mt-module mt-flex-gallery">
@@ -16,6 +16,11 @@ const Process = () => {
                         <img src="https://cdn-icons-png.flaticon.com/512/1260/1260667.png" alt="ReactJs" />
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python" />
                         <img src="https://www.ovhcloud.com/sites/default/files/styles/text_media_horizontal/public/2021-05/MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png" alt="Mongo DB" />
+                        <img src="https://raw.githubusercontent.com/webpack/media/master/logo/logo-on-white-bg.png" alt="WebPack" />
+                        <img src="https://cdn.pixabay.com/photo/2014/05/07/15/19/django-339744_960_720.png" alt="Dhango" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" alt="Vue Js" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="Laravel" />
+                        <img src="https://ucarecdn.com/22a0a69b-689f-46c9-866b-57650f31fde9/" alt="Three Js for AR" />
                     </div>
                 </div>
                 <div className="col-md-6">

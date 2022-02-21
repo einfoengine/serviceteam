@@ -1,16 +1,19 @@
 import React from 'react'
 import Blurb from '../modules/Blurb'
 import Section from '../Components/Section'
+import Fullstack from '../Resource/coding.png'
+import CMSimg from '../Resource/cms.png'
+import Mobile from '../Resource/mobile.png'
 
 const Service = () => {
     return (
         <>
-            <Section id='mt-service' title="Services" type="container">
+            <Section id='mt-service' title="Services" type="container-fluid">
                 <div className="col-md-4">
                     <Blurb 
-                        imgSrc="https://cdn-icons-png.flaticon.com/512/558/558593.png"
+                        imgSrc={Fullstack}
                         imgClass="mt-icon box-primary"
-                        title={<>web<span>solution</span></>}
+                        title={<>Full stack<span>development</span></>}
                         text="The modern website often means a very interactive solution, combining with a stunning UI, friendly and meaningful UX, a client-end solution, an admin panel etc."
                         link="#"
                         btnLabel="Know more"
@@ -18,9 +21,9 @@ const Service = () => {
                 </div>
                 <div className="col-md-4">
                     <Blurb 
-                        imgSrc="https://cdn-icons-png.flaticon.com/512/558/558593.png"
+                        imgSrc={CMSimg}
                         imgClass="mt-icon box-primary"
-                        title={<>web<span>solution</span></>}
+                        title={<>CMS<span>solution</span></>}
                         text="The modern website often means a very interactive solution, combining with a stunning UI, friendly and meaningful UX, a client-end solution, an admin panel etc."
                         link="#"
                         btnLabel="Know more"
@@ -28,9 +31,9 @@ const Service = () => {
                 </div>
                 <div className="col-md-4">
                     <Blurb 
-                        imgSrc="https://cdn-icons-png.flaticon.com/512/558/558593.png"
+                        imgSrc={Mobile}
                         imgClass="mt-icon box-primary"
-                        title={<>web<span>solution</span></>}
+                        title={<>Mobile<span>application</span></>}
                         text="The modern website often means a very interactive solution, combining with a stunning UI, friendly and meaningful UX, a client-end solution, an admin panel etc."
                         link="#"
                         btnLabel="Know more"

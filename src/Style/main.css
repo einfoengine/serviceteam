@@ -17,8 +17,33 @@ li {
 }
 
 a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   text-decoration: none;
-  color: inherit;
+  color: #272DC1;
+}
+
+a::after, a::before, a span {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.mt-heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 35px;
 }
 
 .mt-mod-title {
@@ -26,16 +51,36 @@ a {
 }
 
 .mt-mod-title span {
-  color: #aaaaaa;
+  color: #666666;
   display: block;
   font-weight: 300;
 }
 
 .mt-sec-title {
   color: transparent;
-  -webkit-text-stroke: 1px #aaaaaa;
+  -webkit-text-stroke: 1px #a8a8a8;
   text-transform: uppercase;
   font-size: 84px;
+  line-height: 1.3;
+  margin-bottom: 35px;
+}
+
+.mt-jumbo-title {
+  font-size: 84px;
+  text-transform: uppercase;
+}
+
+.mt-jumbo-title > span {
+  display: block;
+  color: #a8a8a8;
+}
+
+.mt-sub-title {
+  color: #0F0F0F;
+  -webkit-text-stroke: 0;
+  display: block;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .mt-supper-heading {
@@ -44,32 +89,6 @@ a {
   display: block;
   font-size: 35px;
   font-weight: bold;
-}
-
-.mt-main-heading {
-  font-size: 35px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 30px;
-}
-
-.mt-main-heading span {
-  font-weight: 300;
-  display: block;
-  color: #aaaaaa;
-}
-
-.mt-main-heading-primary {
-  font-size: 35px;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 30px;
-}
-
-.mt-main-heading-primary span {
-  font-weight: 300;
-  display: block;
-  color: #272DC1;
 }
 
 .container-fluid {
@@ -200,6 +219,11 @@ a {
   right: 9px;
 }
 
+.mt-btn-cta:hover span {
+  background: #F03726;
+  color: #F8FBFF;
+}
+
 .mt-btn-primary {
   background: #F8FBFF;
   border: 1px solid #272DC1;
@@ -249,6 +273,8 @@ a {
 
 .mt-flex-gallery img {
   max-height: 70px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .mt-section {
@@ -260,8 +286,17 @@ a {
   padding: 15px 0;
 }
 
+.mt-header .mt-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  margin-top: 12px;
+  color: #F8FBFF;
+}
+
 .mt-hero {
   background: #272DC1;
+  padding-top: 135px;
+  padding-bottom: 135px;
 }
 
 .mt-hero .mt-supper-heading {
@@ -270,5 +305,29 @@ a {
 
 .mt-service p, .mt-service .mt-mod-title, .mt-service .mt-btn {
   margin-left: 50px;
+}
+
+.text-primary {
+  color: #272DC1 !important;
+}
+
+.slick-dots {
+  text-align: left !important;
+}
+
+.slick-dots li button:before {
+  font-family: none !important;
+  font-size: 0 !important;
+  line-height: 0 !important;
+  width: 20px !important;
+  height: 5px !important;
+  border-radius: 3px;
+  content: '';
+  text-align: center;
+  opacity: none;
+  color: black;
+  background: #0F0F0F;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 /*# sourceMappingURL=main.css.map */

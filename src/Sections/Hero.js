@@ -9,7 +9,7 @@ const Hero = () => {
   const link = '#';
   return (
     <>
-      <Section id="mt-hero" className="mt-hero" type="contaier">
+      <Section id="mt-hero" className="mt-hero" type="container">
         <Heading tag='h1' className="mt-sec-title text-center">
           <span className="mt-supper-heading">Gareup your business with</span> <span>web & mobile application</span>
         </Heading>

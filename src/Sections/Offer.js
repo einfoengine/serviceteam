@@ -6,7 +6,7 @@ import Section from '../Components/Section';
 const Offer = () => {
   return (
       <>
-        <Section id="mt-process" type="container">
+        <Section id="mt-process" type="container-fluid">
           <div className="col-md-12">
             <div className="mt-jumbotron">
               <Heading supperHeading="Let us give a free support">

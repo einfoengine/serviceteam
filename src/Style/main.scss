@@ -16,12 +16,31 @@ li{
     list-style: none;
 } 
 a{
+    transition: all 0.3s;
     text-decoration: none;
-    color: inherit;
+    color: $text-primary;
+    &::after, &::before, span{
+        transition: all 0.3s;
+        cursor: pointer;
+    }
 }  
 
 // Typography
 // .................
+h4{
+    margin-top: $mt-gutter;
+    margin-bottom: $mt-gutter/2;
+}
+p{
+    color: $text-paragraph;
+    margin-bottom: $mt-gutter;
+}
+.mt-heading{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: $heading-regular;
+}
 .mt-mod-title{
     text-transform: uppercase;
     span{
@@ -32,9 +51,26 @@ a{
 }
 .mt-sec-title{
     color: transparent;
-    -webkit-text-stroke: 1px $color-gry;
+    -webkit-text-stroke: 1px $text-fade;
     text-transform: uppercase;
     font-size: $heading-jumbo;
+    line-height: 1.3;
+    margin-bottom: $heading-regular;
+}
+.mt-jumbo-title{
+    font-size: $heading-jumbo;
+    text-transform: uppercase;
+    > span {
+        display: block;
+        color: $text-fade;
+    }
+}
+.mt-sub-title{
+    color: $text-black;
+    -webkit-text-stroke: 0;
+    display: block;
+    font-size: $heading-regular;
+    font-weight: bold;
 }
 
 .mt-supper-heading{
@@ -45,29 +81,6 @@ a{
     font-weight: bold;
 }
 
-.mt-main-heading{
-    font-size: $heading-regular;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: $mt-gutter;
-    span{
-        font-weight: 300;
-        display: block;
-        color: $color-gry;
-    }
-}
-
-.mt-main-heading-primary{
-    font-size: $heading-regular;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: $mt-gutter;
-    span{
-        font-weight: 300;
-        display: block;
-        color: $color-primary;
-    }
-}
 
 
 
@@ -197,6 +210,12 @@ a{
             right: 9px;
         }
     }
+    &:hover{
+        span{
+            background: $color-tertiary;
+            color: $text-white;
+        }
+    }
 }
 .mt-btn-primary{
     background: $color-white;
@@ -237,6 +256,8 @@ a{
     align-items: center;
     img{
         max-height: 70px;
+        margin-right: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -252,11 +273,19 @@ a{
 .mt-header{
     background-color: $bg-header;
     padding: 15px 0;
+    .mt-btn-secondary{
+        display: inline-block;
+        background: transparent;
+        margin-top: 12px;
+        color: $text-white;
+    }
 }
 
 // Hero
 .mt-hero{
     background: $color-primary;
+    padding-top: $mt-section-padding * 1.5;
+    padding-bottom: $mt-section-padding * 1.5;
     .mt-supper-heading{
         color: $color-white;
     }
@@ -271,3 +300,31 @@ a{
 }
 
 // Process
+
+// Override
+// .................
+// Bootstrap
+.text-primary{
+    color: $text-primary !important;
+}
+// Slick
+.slick-dots{
+    text-align: left !important;
+    li {
+        button:before{
+            font-family: none !important;
+            font-size: 0 !important;
+            line-height: 0 !important;
+            width: 20px !important;
+            height: 5px !important;
+            border-radius: 3px;
+            content: '';
+            text-align: center;
+            opacity: none;
+            color: black;
+            background: $color-black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }
+}

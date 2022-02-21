@@ -1,3 +1,4 @@
+
 // Space and size
 $mt-gutter: 30px;
 $mt-section-padding: $mt-gutter * 3;
@@ -8,7 +9,7 @@ $color-secondary: #E75E16;
 $color-tertiary: #F03726;
 $color-white: #F8FBFF;
 $color-black: #0F0F0F;
-$color-gry: #aaaaaa;
+$color-gry: #666666;
 $color-dark-blue: #090A38;
 
 $bg-body: $color-white;
@@ -33,6 +34,13 @@ $text-secondary: $color-secondary;
 $text-white: $color-white;
 $text-black: $color-black;
 $text-gry: $color-gry;
+$text-fade: lighten($color-black, 60%);
+// $text-fade: yellow;
+
+$text-heading: $text-black;
+$text-sup-heading: $text-gry;
+$text-sub-heading: $text-gry;
+$text-paragraph: $text-gry;
 // Font weight
 $boldest: 700;
 
